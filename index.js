@@ -45,12 +45,21 @@ Using the burger object below do the following:
   For example: burger.discount("teacher") would return 13.5 and burger.discount("public") would return 16.2
 */
 
-// export const burger = {
-//   name: "Burger",
-//   price: 18,
-//   category: "Lunch",
-//   /*Your code here*/
-// };
+const burger = {
+  name: "Burger",
+  price: 18,
+  category: "Lunch",
+  discount(schoolDis) {
+    if (schoolDis === "teacher" || schoolDis === "student") {
+      return this.price * 0.75;
+    } else {
+      return this.price * 0.9;
+    }
+  },
+};
+
+burger.discount("teacher");
+console.log(burger.discount("teacher"));
 
 ///////////////Reviews (MVP)///////////////////
 const reviews = [
@@ -157,6 +166,7 @@ function getLastReview(reviews, index) {
   return `${reviews[index].name} gave the restaurant a ${reviews[index].rating} star review, and their feedback was ${reviews[index].feedback}`;
 }
 console.log(getLastReview(reviews, 7));
+
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
 
 /** 💪💪💪💪💪💪💪💪💪💪 STRETCH 1: 💪💪💪💪💪💪💪💪💪💪 
@@ -216,10 +226,10 @@ function carMaker(/* code here */) {
 }
 
 /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑 */
-function foo() {
-  console.log("its working");
-  return "bar";
-}
+// function foo() {
+//   console.log("its working");
+//   return "bar";
+// }
 
 // export default {
 //   foo,
