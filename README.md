@@ -9,17 +9,17 @@
 
 ## Introduction
 
-You've been contracted by a restaurant to start building out their website. Before you work on any of the styling, you need to organzine your data in JavaScript. In this challenge you will work with different objects, constructors, and arrays of objects to manipulate data. 
+You've been contracted by a restaurant to start building out their website. Before you work on any of the styling, you need to organzine your data in JavaScript. In this challenge you will work with different objects, constructors, and arrays of objects to manipulate data.
 
 ## Instructions
 
 ### Task 1: Set up Project
 
-1. Fork the repo
-2. Clone your forked version of the repo
-3. cd into your repo and create a branch with your first and last name
-4. open the terminal in your vs code and type `npm install`
-5. next type `npm run test:watch` in your terminal
+1. Fork the repo X
+2. Clone your forked version of the repo X
+3. cd into your repo and create a branch with your first and last name X
+4. open the terminal in your vs code and type `npm install` X
+5. next type `npm run test:watch` in your terminal X
 6. Complete your work making regular commits, once you have all your tests passing and you are ready to submit your work please see canvas for instructions on how to submit
 
 ### Task 2: MVP
@@ -38,11 +38,8 @@ Make sure you are invoking your function after defining it in order to view resu
 
 ## Resources
 
-
-
 ## Submission format
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request.**
-
+- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request.**
