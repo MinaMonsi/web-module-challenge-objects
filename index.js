@@ -151,7 +151,7 @@ function getReviewByIndex(reviews, index) {
   return `${reviews[index].name} gave the restaurant a ${reviews[index].rating} star review, and their feedback was:  ${reviews[index].feedback}`;
 }
 
-console.log(getReviewByIndex(reviews, 0));
+//console.log(getReviewByIndex(reviews, 0));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Write a function to get information about the most recent (last) review called `getLastReview`
@@ -163,7 +163,11 @@ Use the getLastReview function below to do the following:
   For example: getLastReview(reviews) would return: "Reyna gave the restaurant a 3.5 star review and, their feedback was: this place is chill with really cool people, great for getting work done on weekdays".
 */
 
-function getLastReview() {}
+function getLastReview(reviews, index) {
+  return `${reviews[index].name} gave the restaurant a ${reviews[index].rating} star review and their feedback was: ${reviews[index].feedback}`;
+}
+
+console.log(getLastReview(reviews, 7));
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
 
