@@ -59,7 +59,7 @@ const burger = {
   },
 };
 
-console.log(burger.discount("teacher"));
+//console.log(burger.discount("teacher"));
 
 ///////////////Reviews (MVP)///////////////////
 const reviews = [
@@ -106,6 +106,8 @@ const reviews = [
 Using the reviews array above:
 1. log only Julius' feedback to the console
 */
+
+console.log(reviews[5].feedback);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Using the reviews array above do the following:
