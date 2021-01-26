@@ -29,9 +29,9 @@ Test your createMenuItems function by doing the following:
   For example: createMenuItem("pizza",5,"lunch") would return this as the object: {name:"Pizza",price:5,category:"lunch"}
 */
 
-console.log(createMenuItems("Pizza", 5, "lunch"));
-console.log(createMenuItems("chicken tacos", 8, "dinner"));
-console.log(createMenuItems("pho", 7, "lunch"));
+// console.log(createMenuItems("Pizza", 5, "lunch"));
+// console.log(createMenuItems("chicken tacos", 8, "dinner"));
+// console.log(createMenuItems("pho", 7, "lunch"));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 You're having a lunch special! 25% off for teachers and students, 10% off for everyone else. Add a method to the 
@@ -50,9 +50,16 @@ const burger = {
   name: "Burger",
   price: 18,
   category: "Lunch",
+  discount(schoolDis) {
+    if (schoolDis === "teacher" || schoolDis === "student") {
+      return this.price * 0.75;
+    } else {
+      return this.price * 0.9;
+    }
+  },
 };
 
-//console.log(burger.discount("teacher"));
+console.log(burger.discount("teacher"));
 
 ///////////////Reviews (MVP)///////////////////
 const reviews = [
