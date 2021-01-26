@@ -119,18 +119,24 @@ function newReview(name, rating, feedback) {
   reviews.push({ name, rating, feedback });
   return reviews;
 }
-console.log(
-  newReview(
-    "Mina",
-    4,
-    "Great food and wait staff.  They were attentive to our every need while following strict covid protocols"
-  )
-);
+// console.log(
+//   newReview(
+//     "Mina",
+//     4,
+//     "Great food and wait staff.  They were attentive to our every need while following strict covid protocols"
+//   )
+// );
+
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Reyna's feedback is missing! Use what you know to do the following:
   1. Add this feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
   2. log the reviews array to the console to check your work
 */
+
+reviews[7].feedback =
+  "This place is chill with really cool people, great for getting work done on weekdays.";
+
+console.log(reviews);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function to return a review based on the index of the review in the array.
@@ -141,7 +147,11 @@ Use the getReviewByIndex function below to do the following:
   For example: getReviewByIndex(reviews,0) would return: "Daniela gave the restaurant a 5 star review, and their feedback was: Beautiful atmosphere and wonderful vegan options!"
 // */
 
-function getReviewByIndex() {}
+function getReviewByIndex(reviews, index) {
+  return `${reviews[index].name} gave the restaurant a ${reviews[index].rating} star review, and their feedback was:  ${reviews[index].feedback}`;
+}
+
+console.log(getReviewByIndex(reviews, 0));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Write a function to get information about the most recent (last) review called `getLastReview`
