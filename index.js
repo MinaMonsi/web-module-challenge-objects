@@ -107,7 +107,7 @@ Using the reviews array above:
 1. log only Julius' feedback to the console
 */
 
-console.log(reviews[5].feedback);
+//console.log(reviews[5].feedback);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Using the reviews array above do the following:
@@ -115,6 +115,17 @@ Using the reviews array above do the following:
   2. log the whole array to the console, make sure the new review is inside of it   
 */
 
+function newReview(name, rating, feedback) {
+  reviews.push({ name, rating, feedback });
+  return reviews;
+}
+console.log(
+  newReview(
+    "Mina",
+    4,
+    "Great food and wait staff.  They were attentive to our every need while following strict covid protocols"
+  )
+);
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Reyna's feedback is missing! Use what you know to do the following:
   1. Add this feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
